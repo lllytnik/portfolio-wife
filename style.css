@@ -1,0 +1,136 @@
+@font-face {
+    font-family: SFUIDisplay-Bold;
+    src: url(assets/fonts/SFUIDisplay-Bold.woff);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    position: relative;
+}
+
+.header__title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 21.875rem;
+    font-weight: 400;
+    line-height: 0.8;
+    margin: 45px 0 0;
+    color: #f2f2f2 !important;
+}
+
+@media (max-width: 991px) {
+    .header__title {
+        font-size: 15.625rem;
+        margin-top: 53px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__title {
+        font-size: 9.375rem;
+        margin-top: 53px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header__title {
+        font-size: 7.5rem;
+        margin-top: 53px;
+    }
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    position: relative;
+}
+
+.header__wrapper {
+    position: absolute;
+    top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 991px) {
+    .header__wrapper {
+        top: 130px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__wrapper {
+        grid-template-columns: 1fr;
+        top: 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header__wrapper {
+        top: 65px;
+    }
+}
+
+.header__pic {
+    min-height: 628px;
+
+    background: url(./assets/images/header/pic.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.header__img {}
+
+.header__about {
+    min-height: 628px;
+    padding: 30px;
+    background-color: #d9d9d9;
+}
+
+@media (max-width: 767px) {
+    .header__about {
+        min-height: 428px;
+    }
+}
+
+.header__aboit-text {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 158px 46px 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .header__aboit-text {
+        margin: 100px 46px 0;
+    }
+}
+
+.header__social {
+    margin: 45px auto 0;
+    width: 156px;
+}
+
+.social__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.social__item {
+    width: 100%;
+}
+
+.social__icon {
+    fill: #ffffff;
+}
