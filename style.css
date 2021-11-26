@@ -1,44 +1,11 @@
-@font-face {
-    font-family: SFUIDisplay-Bold;
-    src: url(assets/fonts/SFUIDisplay-Bold.woff);
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* HEADER */
 .header {
+    padding-top: 200px;
     position: relative;
-}
-
-.header__title {
-    font-family: 'Playfair Display', serif !important;
-    font-size: 21.875rem;
-    font-weight: 400;
-    line-height: 0.8;
-    margin: 45px 0 0;
-    color: #f2f2f2 !important;
-}
-
-@media (max-width: 991px) {
-    .header__title {
-        font-size: 15.625rem;
-        margin-top: 53px;
-    }
-}
-
-@media (max-width: 767px) {
-    .header__title {
-        font-size: 9.375rem;
-        margin-top: 53px;
-    }
-}
-
-@media (max-width: 575px) {
-    .header__title {
-        font-size: 7.5rem;
-        margin-top: 53px;
-    }
 }
 
 .container {
@@ -52,8 +19,6 @@ body {
 }
 
 .header__wrapper {
-    position: absolute;
-    top: 180px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -77,15 +42,40 @@ body {
     }
 }
 
-.header__pic {
-    min-height: 628px;
 
-    background: url(./assets/images/header/pic.jpeg) no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+.header__title {
+    position: absolute;
+    top: -220px;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 21.875rem;
+    font-weight: 400;
+    line-height: 0.8;
+    margin: 45px 0 0;
+    color: #f2f2f2 !important;
+    z-index: -1;
 }
 
-.header__img {}
+@media (max-width: 991px) {
+    .header__title {
+        font-size: 15.625rem;
+        top: -175px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .header__title {
+        font-size: 9.375rem;
+        top: -125px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header__title {
+        font-size: 7.5rem;
+        top: -110px;
+    }
+}
 
 .header__about {
     min-height: 628px;
@@ -97,6 +87,13 @@ body {
     .header__about {
         min-height: 428px;
     }
+}
+
+.header__pic {
+    min-height: 628px;
+    background: url(./assets/images/header/pic.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 .header__aboit-text {
@@ -134,3 +131,5 @@ body {
 .social__icon {
     fill: #ffffff;
 }
+
+.works {}
