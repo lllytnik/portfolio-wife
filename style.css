@@ -45,9 +45,9 @@ body {
 
 .header__title {
     position: absolute;
-    top: -220px;
+    top: -185px;
     font-family: 'Playfair Display', serif !important;
-    font-size: 21.875rem;
+    font-size: 16.875rem;
     font-weight: 400;
     line-height: 0.8;
     margin: 45px 0 0;
@@ -65,12 +65,19 @@ body {
 
 @media (max-width: 767px) {
     .header__title {
-        font-size: 9.375rem;
-        top: -125px;
+        font-size: 12.375rem;
+        top: -145px;
     }
 }
 
 @media (max-width: 575px) {
+    .header__title {
+        font-size: 9.5rem;
+        top: -125px;
+    }
+}
+
+@media (max-width: 424px) {
     .header__title {
         font-size: 7.5rem;
         top: -110px;
@@ -132,4 +139,102 @@ body {
     fill: #ffffff;
 }
 
-.works {}
+
+
+
+
+
+
+.works__inner {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+}
+
+@media (max-width: 767px) {
+    .works__inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+.works__slider {
+    min-height: 688px;
+    background-color: #d9d9d9;
+}
+
+@media (max-width: 767px) {
+    .works__slider {
+        order: 1;
+    }
+
+    .works__space {
+        order: 0;
+        min-height: 200px;
+    }
+
+}
+
+
+.works__space {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .works__space {}
+}
+
+@media (max-width: 767px) {
+    .works__space {}
+}
+
+@media (max-width: 575px) {
+    .works__space {}
+}
+
+.works__title {
+    position: absolute;
+    left: -90px;
+    z-index: -1;
+    margin: 20px 0 0;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 16.875rem;
+    font-weight: 400;
+    line-height: 0.8;
+    color: #f2f2f2 !important;
+    -webkit-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+}
+
+@media (max-width: 991px) {
+    .works__title {
+        font-size: 15.625rem;
+        left: -60px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .works__title {
+        font-size: 12.375rem;
+        position: absolute;
+        left: 8px;
+        top: 85px;
+        z-index: -1;
+        margin: 0px 0 0;
+        font-family: 'Playfair Display', serif !important;
+        font-weight: 400;
+        line-height: 0.8;
+        color: #f2f2f2 !important;
+        writing-mode: horizontal-tb;
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: horizontal-tb;
+    }
+}
+
+@media (max-width: 575px) {
+    .works__title {
+        top: 130px;
+        font-size: 7.5rem;
+
+    }
+}
