@@ -165,9 +165,16 @@ body {
     background-color: #d9d9d9;
 }
 
+@media (max-width: 1024px) {
+    .works__content {
+        min-height: 600px;
+    }
+}
+
 @media (max-width: 767px) {
     .works__content {
         order: 1;
+        min-height: 488px;
     }
 
     .works__space {
@@ -175,6 +182,12 @@ body {
         min-height: 200px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .works__content {
+        min-height: 388px;
+    }
 }
 
 
@@ -209,13 +222,14 @@ body {
     -ms-writing-mode: tb-rl;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .works__title {
         font-size: 15.625rem;
         left: -60px;
 
     }
 }
+
 
 @media (max-width: 767px) {
     .works__title {
@@ -247,15 +261,48 @@ body {
 .slider {
     min-width: 0;
     position: relative;
-    padding: 0 60px
+    padding: 40px 40px
 }
 
-.slider__item {}
+.slider__item {
+    position: relative;
+}
 
-.slider__span {
+
+.slider__link {
     display: block;
-    height: 300px;
-    border: 1px solid #ffffff;
+    position: relative;
+    color: #111010;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 2rem;
+
+}
+
+.slider__link::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #d9d9d9;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.slider__link::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    display: none;
+    background: url(./assets/images/works/icon-link.svg) no-repeat;
+}
+
+.slider__link:hover::after {
+    display: block;
 }
 
 /* Слайдер */
@@ -325,12 +372,31 @@ body {
 .slick-arrow.slick-disabled {}
 
 /* Точки (булиты) */
-.slick-dots {}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.slick-dots li {}
+.slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+
+}
 
 /* Активная точка */
 .slick-dots li.slick-active {}
 
 /* Элемент точки */
-.slick-dots li button {}
+.slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 3px;
+    background: #ffffff;
+    border: none;
+}
+
+.slider__img {
+    max-width: 100%;
+    position: relative;
+}
