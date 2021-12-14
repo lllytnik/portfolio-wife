@@ -159,7 +159,7 @@ body {
 
 .works__content {
     min-width: 0;
-    min-height: 688px;
+    /* min-height: 688px; */
     display: flex;
     align-items: center;
     background-color: #d9d9d9;
@@ -167,14 +167,13 @@ body {
 
 @media (max-width: 1024px) {
     .works__content {
-        min-height: 600px;
+        /* min-height: 600px; */
     }
 }
 
 @media (max-width: 767px) {
     .works__content {
         order: 1;
-        min-height: 488px;
     }
 
     .works__space {
@@ -184,11 +183,6 @@ body {
 
 }
 
-@media (max-width: 375px) {
-    .works__content {
-        min-height: 388px;
-    }
-}
 
 
 .works__space {
@@ -209,7 +203,7 @@ body {
 
 .works__title {
     position: absolute;
-    left: -90px;
+    left: -80px;
     z-index: -1;
     margin: 20px 0 0;
     font-family: 'Playfair Display', serif !important;
@@ -222,21 +216,52 @@ body {
     -ms-writing-mode: tb-rl;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1290px) {
     .works__title {
-        font-size: 15.625rem;
+        font-size: 14.625rem;
         left: -60px;
 
     }
 }
 
+@media (max-width: 1120px) {
+    .works__title {
+        font-size: 13rem;
+        left: -60px;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .works__title {
+        font-size: 12.625rem;
+        left: -55px;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .works__title {
+        font-size: 10.625rem;
+        left: -40px;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .works__title {
+        font-size: 9.625rem;
+        left: -40px;
+
+    }
+}
 
 @media (max-width: 767px) {
     .works__title {
-        font-size: 12.375rem;
+        font-size: 9 .375rem;
         position: absolute;
         left: 8px;
-        top: 85px;
+        top: 110px;
         z-index: -1;
         margin: 0px 0 0;
         font-family: 'Playfair Display', serif !important;
@@ -261,7 +286,7 @@ body {
 .slider {
     min-width: 0;
     position: relative;
-    padding: 40px 40px
+    padding: 0px 0px
 }
 
 .slider__item {
@@ -275,6 +300,7 @@ body {
     color: #111010;
     font-family: 'Playfair Display', serif !important;
     font-size: 2rem;
+    cursor: alias;
 
 }
 
@@ -353,6 +379,7 @@ body {
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
+    cursor: text(fdf);
     left: 0;
     background: url(./assets/images/slider/icon-arrow.svg) 0 0 / 100% no-repeat;
     transform: rotate(180deg);
@@ -362,10 +389,18 @@ body {
     -o-transform: rotate(180deg);
 }
 
+.slick-arrow.slick-prev:hover {
+    cursor: pointer;
+}
+
 /* Стрелка вправо */
 .slick-arrow.slick-next {
     right: 0;
     background: url(./assets/images/slider/icon-arrow.svg) 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next:hover {
+    cursor: pointer;
 }
 
 /* Стрелка не активная */
@@ -399,4 +434,110 @@ body {
 .slider__img {
     max-width: 100%;
     position: relative;
+}
+
+
+.contact__inner {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    min-width: 0;
+}
+
+@media (max-width: 767px) {
+    .contact__inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact__content {
+    min-width: 0;
+    min-height: 688px;
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+}
+
+.contact__space {
+    position: relative;
+}
+
+.contact__title {
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    margin: 20px 0 0;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 16.875rem;
+    font-weight: 400;
+    line-height: 0.8;
+    color: #f2f2f2 !important;
+    -webkit-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+}
+
+@media (max-width: 1290px) {
+    .contact__title {
+        font-size: 14.625rem;
+        left: -60px;
+
+    }
+}
+
+@media (max-width: 1120px) {
+    .contact__title {
+        font-size: 13rem;
+        left: -60px;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact__title {
+        font-size: 12.625rem;
+        left: -55px;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .contact__title {
+        font-size: 10.625rem;
+        left: -40px;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .contact__title {
+        font-size: 9.625rem;
+        left: -40px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .contact__title {
+        font-size: 9 .375rem;
+        position: absolute;
+        left: 8px;
+        top: 110px;
+        z-index: -1;
+        margin: 0px 0 0;
+        font-family: 'Playfair Display', serif !important;
+        font-weight: 400;
+        line-height: 0.8;
+        color: #f2f2f2 !important;
+        writing-mode: horizontal-tb;
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: horizontal-tb;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__title {
+        top: 130px;
+        font-size: 7.5rem;
+
+    }
 }
