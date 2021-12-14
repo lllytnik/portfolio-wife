@@ -461,44 +461,53 @@ body {
     position: relative;
 }
 
+@media (max-width: 1024px) {
+    .contact__content {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact__content {
+        order: 1;
+    }
+
+    .contact__space {
+        order: 0;
+        min-height: 200px;
+    }
+
+}
+
+
 .contact__title {
     position: absolute;
-    right: 0px;
+    right: -90px;
     z-index: -1;
     margin: 20px 0 0;
     font-family: 'Playfair Display', serif !important;
-    font-size: 16.875rem;
+    font-size: 12rem;
     font-weight: 400;
     line-height: 0.8;
     color: #f2f2f2 !important;
     -webkit-writing-mode: tb-rl;
     writing-mode: tb-rl;
     -ms-writing-mode: tb-rl;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
 }
 
 @media (max-width: 1290px) {
     .contact__title {
-        font-size: 14.625rem;
+        font-size: 12rem;
         left: -60px;
 
     }
 }
 
-@media (max-width: 1120px) {
-    .contact__title {
-        font-size: 13rem;
-        left: -60px;
-
-    }
-}
-
-@media (max-width: 1024px) {
-    .contact__title {
-        font-size: 12.625rem;
-        left: -55px;
-
-    }
-}
 
 @media (max-width: 991px) {
     .contact__title {
@@ -508,13 +517,7 @@ body {
     }
 }
 
-@media (max-width: 900px) {
-    .contact__title {
-        font-size: 9.625rem;
-        left: -40px;
 
-    }
-}
 
 @media (max-width: 767px) {
     .contact__title {
@@ -540,4 +543,17 @@ body {
         font-size: 7.5rem;
 
     }
+}
+
+@media (max-width: 425px) {
+    .contact__title {
+        top: 145px;
+        font-size: 5.5rem;
+
+    }
+}
+
+.contact__social {
+    margin: 45px auto 0;
+    width: 156px;
 }
